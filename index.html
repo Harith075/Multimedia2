@@ -1,0 +1,182 @@
+<html>
+<head>
+<title> index </title>
+</head>
+<body bgcolor="#333333">
+
+<hr color="black" size="10">
+<center>
+<p style="font-size:30px" font="Times New Roman"><b> 
+PRADA MILANO DAL 1913 
+</b></p>
+</center>
+<hr color="black" size="10">
+
+<!--- INSERTING VIDEO --->
+<video width="100%" autoplay muted loop>
+<source src="video/prada.mp4" type="video/mp4">
+</video>
+
+<br><br><br><br><br>
+
+<hr color="black" size="10">
+<center>
+<p style="font-size:30px" font="Times New Roman"><b>
+JIMMY CHOO 1996
+</b></p>
+</center>
+<hr color="black" size="10">
+
+<br><br>
+
+<!--- INSERTING VIDEO --->
+<center>
+<video controls width="55%">
+<source src="video/Jimmy_Choo.mp4" type="video/mp4">
+</video>
+</center>
+
+<br><br>
+
+<!--- APPLYING MARQUEE ---->
+
+<hr color="black" size="10">
+<marquee direction="right" scrollamount="25"> 
+<p style="font-size:30px" font="Times New Roman"><b>
+<h1> ALL TIME FAVOURITE MOVIE </h1>
+</b></p>
+</marquee>
+<hr color="black" size="10">
+
+<br>
+
+<center>
+<iframe width="800" height="500" autoplay src="https://www.youtube.com/embed/T0MmkG_nG1U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
+
+<br><br><br><br><br>
+
+<!--- APPLYING MARQUEE ---->
+
+<hr color="black" size="10">
+<marquee direction="right" scrollamount="25"> 
+<p style="font-size:30px" font="Times New Roman"><b>
+<h1> BEST MUKBANG </h1>
+</b></p>
+</marquee>
+<hr color="black" size="10">
+
+<br>
+
+<center>
+<iframe width="800" height="500" src="https://www.youtube.com/embed/uZsbC9riCeE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
+
+<br><br><br><br><br>
+
+<!--- EMBEDDING PDF FILE ---->
+
+<hr color="black" size="10">
+<center>
+<p style="font-size:30px" font="Times New Roman"><b>
+MAGAZINE
+<hr color="black" size="10">
+</center>
+</b></p>
+
+<br><br>
+
+<center>
+<iframe src="assets/pdf/magazine.pdf" width="60%" height="700px">
+</iframe>
+</center>
+
+<br><br><br><br><br>
+
+<hr color="black" size="10">
+<center>
+<p style="font-size:30px" font="Times New Roman"><b>
+MY SELF LOVE PLAYLIST
+<hr color="black" size="10">
+</center>
+</b></p>
+
+<br><br>
+<center>
+<br>
+<audio controls>
+<source src="assets/audio/All_I_Want.mp3" type="audio/mp3">
+</audio>
+<br><br>
+<audio controls>
+<source src="assets/audio/Not_Today.mp3" type="audio/mp3">
+</audio>
+<br><br>
+<audio controls>
+<source src="assets/audio/Endless_Love.mp3" type="audio/mp3">
+</audio>
+<br><br>
+<audio controls>
+<source src="assets/audio/Paris_In_The_Rain.mp3" type="audio/mp3">
+</audio>
+<br><br>
+<audio controls>
+<source src="assets/audio/The_Night_We_Met.mp3" type="audio/mp3">
+</audio>
+</center>
+
+<br><br><br><br><br>
+
+<!---JAVA APPLET---> 
+
+<!---to call the css---> 
+
+   <div id="clock"> 8:10:45 </div>
+
+<!---to link to the current time---> 
+ 
+   <script src="clock2.js"></script>
+
+<script> 
+setInterval(showTime, 1000);
+function showTime() {
+  let time = new Date();
+  let hour = time.getHours();
+  let min = time.getMinutes();
+  let sec = time.getSeconds();
+  am_pm = "AM";
+
+  if (hour > 12) {
+    hour -= 12;
+    am_pm = "PM";
+  }
+  if (hour == 0) {
+    hr = 12;
+    am_pm = "AM";
+  }
+
+  hour = hour < 10 ? "0" + hour : hour;
+  min = min < 10 ? "0" + min : min;
+  sec = sec < 10 ? "0" + sec : sec;
+
+  let currentTime = hour + ":"
+      + min + ":" + sec + am_pm;
+
+  document.getElementById("clock")
+      .innerHTML = currentTime;
+}
+showTime();
+</center>
+</script>
+
+<br><br>
+
+<hr color="black" size="10">
+<center>
+<p style="font-size:30px" font="Times New Roman"><b>
+THANK YOU FOR YOUR ATTENTION
+<hr color="black" size="10">
+</b></p>
+
+</body>
+<html>
